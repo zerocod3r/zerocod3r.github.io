@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Sarthak Rohilla</title>
+    <meta content="My name is Sarthak, I am a web developer and coder." name="description">
+    <meta content="Sarthak Rohilla Portfolio" property="og:title">
+    <meta content="My name is Sarthak, I am a web developer and coder." property="og:description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="Webflow" name="generator">
+    <link href="common.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="modernizr-2.7.1.js" type="text/javascript"></script>
+    <script src="jquery-text.js" type="text/javascript"></script>
+</head>
+
+<body>
+    
+    <div class="container w-container">
+        <div class="w-row">
+            <div class="w-col w-col-4 w-col-stack">
+                <div class="author-wrapper">
+                    <div><img sizes="(max-width: 767px) 96vw, (max-width: 991px) 728px, 299.984375px" src="profile.jpg">
+                            </div>
+                    <div class="navigation-wrapper">
+                        <a class="nav-link w-clearfix w-inline-block" href="#">
+                            <div class="nav-text">About me</div>
+                            <i class="fa fa-user-o fa-2x" style="float:right"></i>
+                        </a>
+                        <a class="nav-link w-clearfix w-inline-block" href="https://drive.google.com/open?id=0BxIClbURrHOfQnpyWHdYeHlsTDQ">
+                            <div class="nav-text">Resume</div>
+                            <i class="fa fa-vcard-o fa-2x" style="float:right"></i>
+                        </a>
+                        <a class="nav-link w-clearfix w-inline-block" href="https://github.com/zerocod3r">
+                            <div class="nav-text">Work</div>
+                            <i class="fa fa-github fa-2x" style="float:right"></i>
+                        </a>
+                        <a class="nav-link w-clearfix w-inline-block" href="contact.html">
+                            <div class="nav-text">Contact</div>
+                            <i class="fa fa-phone fa-2x" style="float:right"></i>
+                        </a>
+                    </div>
+                    <div class="social-wrapper">
+                        <a class="facebook social-icon w-inline-block" href="https://www.facebook.com/sarthak.rohilla.5"></a>
+                        <a class="behance social-icon w-inline-block" href="https://www.linkedin.com/in/sarthak-rohilla-70366a119/"></a>
+                        <a class="pinterest social-icon w-inline-block" href="#"></a>
+                        <a class="instagram social-icon w-inline-block" href="https://www.instagram.com/trumpcardx/"></a>
+                        <p class="copyright">© 2017 Portfolio by Sarthak Rohilla</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-col w-col-8 w-col-stack">
+                <div class="page-content">
+                    <div class="title-wrapper">
+                        <h3 class="resume-title">01. About me</h3>
+                    </div>
+                    <div>
+                        <h1 class="about-title">My name is&nbsp;Sarthak Rohilla.</h1>
+                    </div>
+                    <div class="space-divider"></div>
+                    <!--<div class="title-wrapper">
+                        <h3 class="resume-title">02. PROFESSIONAL SKILLS</h3>
+                    </div> -->
+                    <div>
+                            <div class="space-divider"></div>
+                        <div class="title-body">
+                            <div id="bubble">
+                                
+                            </div>
+                        </div>
+                        <div class="space-divider"></div>
+                        <div class="space-divider"></div>
+
+                    </div>
+                    
+                    <div class="space-divider"></div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+            $(document).ready(function() {
+                var $element = $('#bubble');
+                var phrases = [
+                    'A web developer and Android enthusiast.',
+                    'I do lot of competitive coding and take part in coding comptitions too.',
+                    'I am a quick learner and always ready for learning new things to build great stuff.',
+                    'I love playing football and video games',
+                    'I love anime too :D.'
+                ];
+                var index = -1;
+                (function loopAnimation() {
+                    index = (index + 1) % phrases.length;
+                    bubbleText({
+                        element: $element,
+                        newText: phrases[index],
+                        letterSpeed: 40,
+                        callback: function() {
+                            setTimeout(loopAnimation, 1000);
+                        },
+                    });
+                })();
+            });
+    </script>
+    <script src="webflow.js" type="text/javascript"></script>
+    
+</body>
+
+</html>
