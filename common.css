@@ -12,11 +12,14 @@ body {
 
 p {
   color: whitesmoke;
-  font-family: 'Courier New', Courier, monospace
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  
 }
 p#name{
   font-family: 'Courier New', Courier, monospace;
   font-style: bold;
+  font-size: 14px;
 }
 
 a {
