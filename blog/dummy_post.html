@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang=en>
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <link rel='stylesheet' type='text/css' href='../css/style.css' />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="../feed.xml">
+    <meta name="description" content="Centralized silos are never the solution">
+    <meta name="viewport" content="initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@zerocod3r">
+    <meta name="twitter:title" content="We can do better than Signal">
+    <meta name="twitter:description" content="Centralized silos are never the solution">
+    <meta property="og:title" content="We can do better than Signal">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Centralized silos are never the solution">
+    <meta property="og:url" content="../index.html">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"> </script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<title>
+    We can do better than Signal
+</title>
+
+<body>
+    <div class="container">
+        <div class="pull-left">
+            <div class="content">
+                <header>
+                    <a href=../index.html>
+                        <span id="terminal"></span>
+                    </a>
+                    <nav>
+                        <a href="../../about/index.html">about</a>
+                    </nav>
+
+                </header>
+                <article style="clear: both" align="left">
+                    <section class="post-date">
+                        17 Jan, 2021
+                    </section>
+
+                    <h1>We can do better than Signal</h1>
+                    <h2 class="subtitle">Centralized silos are never the solution</h2>
+                    <p>Signal is possibly the most recommended pro-privacy instant
+                        communication app &mdash; one that was commonplace in the hacker community,
+                        and has now gained a lot of mainstream traction, thanks to WhatsApp
+                        deciding to screw its userbase over. It certainly presents a more
+                        compelling alternative than others in the same space, like WhatsApp
+                        itself, Telegram, etc. They engineered the <a
+                            href="https://en.wikipedia.org/wiki/Signal_Protocol" rel="nofollow">Signal
+                            Protocol</a>, which has
+                        found its way into other messaging systems, and has been the base for
+                        the likes of OMEMO and Matrix.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>
+                        While I admire the tech behind
+                        Signal, I still believe we can do better, and we ought to.</p>
+
+                    <p>I have a few gripes with Signal &mdash; the biggest of them all is it&rsquo;s
+                        centralized, and in the US no less. This alone makes it not that
+                        different from WhatsApp &mdash; we&rsquo;re simply moving from one silo to another.
+                        What&rsquo;s to say that Signal will uphold its values, continue operating
+                        <em>and</em> evade censorship and potential compromise? To top it off, they&rsquo;re
+                        becoming a fairly high value target off late. And if that isn&rsquo;t
+                        convincing enough, Signal&rsquo;s massive outage lasting nearly a day<sup class="footnote-ref"
+                            id="fnref:2"><a href="#fn:2">2</a></sup>
+                        should be enough evidence against centralization. Further, Signal is
+                        known to use AWS<sup class="footnote-ref" id="fnref:3"><a href="#fn:3">3</a></sup> as their
+                        cloud provider &mdash; what if another
+                        Parler<sup class="footnote-ref" id="fnref:4"><a href="#fn:4">4</a></sup> happens and the rug is
+                        pulled from under Signal&rsquo;s feet?
+                    </p>
+
+                    <p>A common defense in favor of Signal is, &ldquo;But it&rsquo;s all open source!&rdquo;.
+                        Sure is, but on what basis do I trust them? I don&rsquo;t mean to sound
+                        conspiratorial, but what&rsquo;s to say that the server in production hasn&rsquo;t
+                        been backdoored? In fact, the <a href="https://github.com/signalapp/Signal-Server"
+                            rel="nofollow">Signal server
+                            code</a> hasn&rsquo;t even been
+                        updated since April 2020. You&rsquo;re telling me it&rsquo;s undergone <em>no</em> changes?</p>
+
+                    <p>Another response I usually see is &ldquo;But Signal is all we have!&rdquo;. While
+                        that is somewhat true &mdash; at least by the metric of &ldquo;secure messengers
+                        your granny can use&rdquo;, there are some promising alternatives who are
+                        especially focused on decentralizing E2EE communications.</p>
+
+                    <ol>
+                        <li><a href="https://matrix.org/" rel="nofollow">Matrix</a>: Matrix has improved a whole lot,
+                            and I
+                            like that they&rsquo;re working to disprove that end-to-end encryption
+                            cannot be decentralized<sup class="footnote-ref" id="fnref:5"><a href="#fn:5">5</a></sup>.
+                        </li>
+                        <li><a href="https://getsession.org/" rel="nofollow">Session</a>: While it involves some
+                            cryptoshit,
+                            and hasn&rsquo;t been verified yet, it&rsquo;s an interesting alternative to keep
+                            an eye out for.</li>
+                    </ol>
+
+                    <p>All things said, Signal is the shiniest turd we have &mdash; it fits most
+                        threat models, and does the job alright; I will continue to use it.
+                        However, here&rsquo;s something to think about: while privacy preserving tech
+                        is commendable, does it have to come at the cost of user freedoms? Hint:
+                        it doesn&rsquo;t, and it shouldn&rsquo;t.</p>
+
+                    <div class="footnotes">
+
+                        <hr />
+
+                        <ol>
+                            <li id="fn:1"><a href="https://en.wikipedia.org/wiki/Double_Ratchet_Algorithm"
+                                    rel="nofollow">https://en.wikipedia.org/wiki/Double_Ratchet_Algorithm</a></li>
+
+                            <li id="fn:2"><a href="https://twitter.com/signalapp/status/1350595202872823809"
+                                    rel="nofollow">https://twitter.com/signalapp/status/1350595202872823809</a></li>
+
+                            <li id="fn:3"><a href="https://signal.org/blog/looking-back-on-the-front/"
+                                    rel="nofollow">https://signal.org/blog/looking-back-on-the-front/</a></li>
+
+                            <li id="fn:4"><a href="https://en.wikipedia.org/wiki/Parler#Shutdown_by_service_providers"
+                                    rel="nofollow">https://en.wikipedia.org/wiki/Parler#Shutdown_by_service_providers</a>
+                            </li>
+
+                            <li id="fn:5"><a href="https://matrix.org/blog/2020/01/02/on-privacy-versus-freedom"
+                                    rel="nofollow">https://matrix.org/blog/2020/01/02/on-privacy-versus-freedom</a></li>
+                        </ol>
+
+                    </div>
+
+                </article>
+                <p class="muted">Questions or comments?
+                    Send an email to
+                    <a
+                        href="mailto:~zerocod3r/blog_maillist@lists.sr.ht?Subject=Re: We can do better than Signal">~zerocod3r/x@lists.sr.ht</a>
+                    — my <a href="https://lists.sr.ht/~zerocod3r/blog_maillist">public inbox</a>.
+                </p>
+            </div>
+            <footer>
+                <section class="icons">
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <img class="footimgs" alt="cc nc-by-sa"
+                            src="../img/cc.svg">
+                    </a>
+                    <a href='https://webring.xxiivv.com/#random' target='_blank'><img
+                        src='https://webring.xxiivv.com/icon.white.svg' /></a>
+                    </a>
+                </section>
+
+            </footer>
+        </div>
+    </div>
+    <script src="../js/common.js"></script>
+</body>
+
+</html>
