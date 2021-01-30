@@ -1,5 +1,5 @@
 :root {
-	--bg: #000000;
+	--bg: #1a1a1a;
 	--cyan: #1e9191;
 	--light: #ffffff;
 	--light-gray: #eee;
@@ -7,7 +7,8 @@
 	--code:  #1e9191;
 	--dark: #0f0;
 	--darker: #222;
-	--code-bg: #000000
+	--code-bg: #000000;
+	--cyan: #79ffe1;
 }
 
 body {
@@ -122,7 +123,7 @@ pre {
 	padding: 10px;
 	min-width: 0;
 	/* background-color: var(--code-bg)!important; */
-	background-color: #000000;
+	background-color: #262626;
 	font-size: 16px!important
 }
 
@@ -353,5 +354,5 @@ hr {
 }
 
 #terminal {
-	background-color:black; color: #0f0; font-family: 'Inconsolata', sans-serif; font-weight: bold;
+	background-color: #1a1a1a; color: #0f0; font-family: 'Inconsolata', sans-serif; font-weight: bold;
 }
