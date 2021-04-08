@@ -39,5 +39,5 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-fontawesome-css`,
   ],
-  pathPrefix: "/zercod3r.github.io",
+  
 }
