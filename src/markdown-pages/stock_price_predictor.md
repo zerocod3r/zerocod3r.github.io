@@ -57,7 +57,7 @@ scaled_data = scaler.fit_transform(data['Close'].values.reshape(-1,1))
 
 ## Storing trained data
 Here we storing the training data in arrays. Going from number of prediction days to length of scaled data, starting counting from 60th index to the last index of scaled data.
-Here in x_train we adding data for first 60 values, using this we will we will store 61th value in y_train and so on
+Here in `x_train` we adding data for first 60 values, using this we will we will store 61th value in `y_train` and so on
 Convert our arrays to numpy array and reshape.
 ```python
 prediction_days = 60
@@ -73,7 +73,7 @@ x_train = np.reshape(x_train,  (x_train.shape[0], x_train.shape[1],  1))
 ```
 ## Building model
 Initialize a Sequential model. A `Sequential` model is appropriate for a plain stack of layers where each layer has exactly one input tensor and one output tensor.
-We are using Long Short-Term Memory Networks here, is a type of neural network model which is capable of learning dependency of order in sequence prediction problem, like the one we need to do here, process past data to get next data. Units are layers of data set to be trained, more the number more time it will take to train data. return_sequences is set true because LSTM does feedback operation to feed again data.
+We are using Long Short-Term Memory Networks here, is a type of neural network model which is capable of learning dependency of order in sequence prediction problem, like the one we need to do here, process past data to get next data. Units are layers of data set to be trained, more the number more time it will take to train data. `return_sequences` is set true because LSTM does feedback operation to feed again data.
 Data epochs 30 means 29 times iterate same data. We can tweak this number to get better results
 ```python
 model = Sequential()
@@ -103,7 +103,7 @@ model_inputs = model_inputs.reshape(-1,  1)
 model_inputs = scaler.transform(model_inputs)
 ```
 
-Here we are putting out model_inputs numpy array to model predict to get the desired value, but before putting it we need to reshape our data to dimensions that model had used while training.
+Here we are putting out `model_inputs` numpy array to model predict to get the desired value, but before putting it we need to reshape our data to dimensions that model had used while training.
 ```python
 real_data =  [model_inputs[len(model_inputs)  -  1  - prediction_days:len(model_inputs+1),  0]]
 real_data = np.array(real_data)
@@ -119,7 +119,7 @@ Prediction: [[130.61981]]
 ```
 
 ## Conclusion
-You can check the code here [https://github.com/zerocod3r/stock_price_predictor](https://github.com/zerocod3r/stock_price_predictor)
+You can check the code [Here](https://github.com/zerocod3r/stock_price_predictor).
 
 The prediction is not always correct as stock markets are very much volatile to news and things happening around, but this could be used a starter for coding such scripts to automate trading. In future I will keep on updating the code making it more generic and accurate.
 
