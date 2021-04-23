@@ -4,7 +4,6 @@ date: "2021-04-23"
 author: "zerocod3r"
 path: "/stock_price_predictor"
 ---
-# Stock Next day Price Predictor
 
 I am hoping you are having basic market knowledge and Python knowledge before starting this. We are writing a code a here to predict next one day price for a stock. 
 
@@ -56,7 +55,7 @@ scaler = MinMaxScaler(feature_range=[0,1])
 scaled_data = scaler.fit_transform(data['Close'].values.reshape(-1,1))
 ```
 
-### Storing trained data
+## Storing trained data
 Here we storing the training data in arrays. Going from number of prediction days to length of scaled data, starting counting from 60th index to the last index of scaled data.
 Here in x_train we adding data for first 60 values, using this we will we will store 61th value in y_train and so on
 Convert our arrays to numpy array and reshape.
@@ -72,7 +71,7 @@ x_train = np.array(x_train)
 y_train = np.array(y_train)
 x_train = np.reshape(x_train,  (x_train.shape[0], x_train.shape[1],  1))
 ```
-### Building model
+## Building model
 Initialize a Sequential model. A `Sequential` model is appropriate for a plain stack of layers where each layer has exactly one input tensor and one output tensor.
 We are using Long Short-Term Memory Networks here, is a type of neural network model which is capable of learning dependency of order in sequence prediction problem, like the one we need to do here, process past data to get next data. Units are layers of data set to be trained, more the number more time it will take to train data. return_sequences is set true because LSTM does feedback operation to feed again data.
 Data epochs 30 means 29 times iterate same data. We can tweak this number to get better results
@@ -89,7 +88,7 @@ model.compile(optimizer='adam',  loss='mean_squared_error')
 model.fit(x_train, y_train,  epochs=30)
 ```
 
-### Using model to predict next close price
+## Using model to predict next close price
 First we create a test data and use our model on it to check how well it matches with actual data.
 Again we will be fetching Close prices for same company stock from desired date to current date, and reshape last 60 days values.
 Then we need to create and reshape our data to numpy array, as predict function takes input a defined 
@@ -119,7 +118,7 @@ Prediction: [[130.61981]]
 (venv) D:\projects\stock_price_predictor>
 ```
 
-### Conclusion
+## Conclusion
 You can check the code here [https://github.com/zerocod3r/stock_price_predictor](https://github.com/zerocod3r/stock_price_predictor)
 
 The prediction is not always correct as stock markets are very much volatile to news and things happening around, but this could be used a starter for coding such scripts to automate trading. In future I will keep on updating the code making it more generic and accurate.
