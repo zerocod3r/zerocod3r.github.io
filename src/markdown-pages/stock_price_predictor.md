@@ -124,3 +124,5 @@ You can check the code [Here](https://github.com/zerocod3r/stock_price_predictor
 The prediction is not always correct as stock markets are very much volatile to news and things happening around, but this could be used a starter for coding such scripts to automate trading. In future I will keep on updating the code making it more generic and accurate.
 
 Suggestions and abuses are welcome on github issue.
+
+Questions or comments? Send an email to [zerocod3r@protonmail.com](mailto:zerocod3r@protonmail.com).
