@@ -38,6 +38,20 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-fontawesome-css`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              showLineNumbers: false,
+              noInlineHighlight: false,
+              inlineCodeMarker: null,
+            }
+          }
+        ]
+      }
+    }
   ],
-  
 }
